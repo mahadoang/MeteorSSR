@@ -1,0 +1,33 @@
+{
+  "name": "test-ssr",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "bcrypt": "^3.0.0",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-helmet-async": "^0.2.0-beta.1",
+    "react-js-pagination": "^3.0.2",
+    "react-loadable": "git+https://github.com/CaptainN/react-loadable.git",
+    "react-moment": "^0.7.9",
+    "react-router-dom": "^4.3.1",
+    "simpl-schema": "^1.5.3"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    }
+  }
+}
